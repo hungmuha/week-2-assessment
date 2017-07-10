@@ -6,13 +6,13 @@ $(document).ready(function(){
  window.addEventListener("keypress",test) //function that control the keypress to the box move
  function test(e){
  	let key=e.which||e.keyCode;
- 	if(key===108){ //blue box move
+ 	if(key===108){ //blue box move,by hitting L to make the top move
  		console.log("you pressed L");
  		l++;
  		var b= "blue";
  		shapeMove(l,b);	
  	}
- 	if(key===97){ //red box move
+ 	if(key===97){ //red box move, by hitting A to make the bottom move
  		console.log("you pressed A");
  		a++;
  		var r= "red";
