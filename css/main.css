@@ -32,7 +32,7 @@
 	background-size: cover;
 	width:100%;
 }
-.instruction{
+.instruction{ /*styling the instruction in game*/
 	position:absolute;
 	float:left;
 	top:50px;
