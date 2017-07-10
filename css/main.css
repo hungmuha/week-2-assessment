@@ -1,0 +1,137 @@
+
+#red{
+	width:200px;
+	height:200px;
+}
+/*player 1 vehicle*/
+#space{ 
+	margin-left:150px;
+	margin-top: 220px;
+	width:300px;
+}
+/*player 2 vehicle*/
+#drone{ 
+	margin-left:150px;
+	margin-top: 150px;
+	width:300px;
+}
+
+#blue{
+	width:200px;
+	height:200px;
+}
+/*game page background*/
+.game{
+	background-image: url(../Images/futurama.png);
+	background-size: cover;
+	width:100%;
+}
+/*landing page background*/
+.home{
+	background-image: url(../Images/futurama.png);
+	background-size: cover;
+	width:100%;
+}
+a{
+	text-decoration: none;
+	color: white;
+}
+button{ /* style the start button in home page*/
+	position:relative;
+	border: 1px solid black;
+	border-radius: 20px;
+	border-image-slice: 1;
+	display: block;
+	background-color: #38CB6F;
+	text-shadow: 0 2px 0 #2f6841;
+	font-size:30px;
+	width: 300px;
+	height:60px;
+	box-sizing: border-box;
+	margin: 270px auto;
+	text-align: center;
+}
+/*used to make the border color gradient and round*/
+button::after { 
+  content: '';
+  position: absolute;
+  top: -7px;
+  bottom: -7px;
+  right: -7px;
+  left: -7px;
+  -webkit-border-image: -webkit-linear-gradient(top,  #C2FFDA 0%, #147D4A 100%);
+  background-image: linear-gradient(to bottom right, #C2FFDA 0%, #147D4A 100%);
+  z-index: -1;
+  border-radius: 25px;
+}
+
+.storeDiv{
+	position: relative;
+	display: block;
+	text-align:center;
+}
+.store{
+	display: inline-block;
+	margin-left: 5px;	
+}
+
+
+
+
+
+
+
+
+@media (max-width: 1024px){ /* case that website is open in a tablet*/
+	.game{
+	background-image: url(../Images/futurama.png);
+	background-size: cover;
+	width:100%;
+	}
+	/*player 1 vehicle*/
+	#space{ 
+	margin-left:20px;
+	margin-top: 150px;
+	width:150px;
+	}
+	/*player 2 vehicle*/
+	#drone{ 
+	margin-left:20px;
+	margin-top: 80px;
+	width:150px;
+	}
+
+	button{ /* style the start button in home page*/
+	position:relative;
+	border: 1px solid black;
+	border-radius: 10px;
+	border-image-slice: 1;
+	display: block;
+	background-color: #38CB6F;
+	text-shadow: 0 2px 0 #2f6841;
+	font-size:20px;
+	width: 180px;
+	height:30px;
+	box-sizing: border-box;
+	margin : 190px auto;
+	text-align: center;
+	}
+	/*used to make the border color gradient and round*/
+	button::after { 
+  	content: '';
+    position: absolute;
+    top: -4px;
+    bottom: -4px;
+    right: -4px;
+    left: -4px;
+    -webkit-border-image: -webkit-linear-gradient(top,  #C2FFDA 0%, #147D4A 100%);
+    background-image: linear-gradient(to bottom right, #C2FFDA 0%, #147D4A 100%);
+    z-index: -1;
+    border-radius: 12px;
+	}
+	.store{
+	display: inline-block;
+	margin-left: 5px;
+	width: 100px; 
+	}
+}
